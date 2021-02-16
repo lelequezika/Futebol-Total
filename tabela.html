@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM CONSTRUÇÃO - FUTEBOL TOTAL</title>
+
+    <style>
+        body {
+
+            background-color: greenyellow
+        }
+
+        #menu {
+            border: 2px none black;
+            margin: 0px 0px;
+            padding: 5px;
+            background-color: yellow;
+            color: black;
+            font-family: fantasy;
+            font-size: 15pt;
+            text-align: center;
+            border-radius: 5px;
+
+        }
+
+        #container {
+            border: 2px none black;
+            margin: 2px 0px;
+            background-color: greenyellow;
+            color: black;
+            font-family: fantasy;
+            font-size: 20pt;
+            border-radius: 5px;
+        }
+
+        #titulo {
+            text-align: center;
+            padding: 2px;
+            color: blue;
+        }
+
+        #vitoria {
+            color: green;
+        }
+
+        #derrota {
+            color: red;
+        }
+
+        #empate {
+            color: gray;
+        }
+
+        #colunaprincipal {
+            color: maroon;
+        }
+
+        footer {
+            border: 2px none black;
+            margin: 0px 0px;
+            background-color: blue;
+            color: white;
+            font-family: fantasy;
+            font-size: 15pt;
+            border-radius: 5px;
+
+        }
+    </style>
+
+
+    <script>
+
+
+    </script>
+
+</head>
+
+<body>
+    <header id="menu">
+        <a href="./index.html">Ínicio </a>
+        <a href="./tabela.html">| Tabela </a>
+        | Próximos Jogos | Estatísticas | <a href="./formulario.html">Formulário</a> | -------- | -------- | -------- |
+        --------
+    </header>
+
+
+    <div id="container">
+
+        <div id="titulo">Tabela do Brasileirão</div>
+        <hr />
+
+        <!-- <h2>Sobre nós</h2>
+
+<ul>
+ <li>O</li>
+ <li>Melhor</li>   
+ <li>Site</li>
+ <li>De</li>
+ <li>Futebol</li>
+ <li>Do</li>
+ <li>BRASIL</li>
+</ul>
+
+<ol>
+  <li>O primeiro</li>
+  <li>O segundo</li>
+  <li>O terceiro</li>  
+</ol> -->
+
+        <table border="3">
+
+            <tr>
+
+                <td id="colunaprincipal">Clube</td>
+                <td id="colunaprincipal"> Pontos </td>
+                <td id="colunaprincipal">Partidas jogadas </td>
+                <td id="colunaprincipal">Vitórias </td>
+                <td id="colunaprincipal"> Empates</td>
+                <td id="colunaprincipal"> Derrotas</td>
+                <td id="colunaprincipal">Gols pró </td>
+                <td id="colunaprincipal">Gols contra </td>
+                <td id="colunaprincipal">Saldo de Gols </td>
+                <td id="colunaprincipal">Últimas cinco </td>
+
+            </tr>
+
+            <tr>
+
+                <td>Internacional</td>
+                <td>59</td>
+                <td>31</td>
+                <td>17</td>
+                <td>8</td>
+                <td>6</td>
+                <td>53</td>
+                <td>29</td>
+                <td>24</td>
+                <td>
+                    <span id="vitoria"> V </span>|
+                    <span id="vitoria"> V </span> |
+                    <span id="vitoria"> V </span>|
+                    <span id="vitoria"> V </span> |
+                    <span id="vitoria"> V </span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td>57</td>
+                <td>31</td>
+                <td>16</td>
+                <td>9</td>
+                <td>6</td>
+                <td>51</td>
+                <td>33</td>
+                <td>18</td>
+                <td>
+                    <span id="derrota"> D </span>|
+                    <span id="empate"> Z </span> |
+                    <span id="derrota"> D </span>|
+                    <span id="derrota"> D </span> |
+                    <span id="vitoria"> V </span>
+                </td>
+            </tr>
+            <tr>
+                <td>Atlético MG</td>
+                <td>54</td>
+                <td>30</td>
+                <td>16</td>
+                <td>6</td>
+                <td>8</td>
+                <td>52</td>
+                <td>38</td>
+                <td>14</td>
+                <td>
+                    <span id="empate"> Z </span> |
+                    <span id="vitoria"> V </span>|
+                    <span id="empate"> Z </span> |
+                    <span id="vitoria"> V </span>|
+                    <span id="derrota"> D </span>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Flamengo</td>
+                <td>52</td>
+                <td>29</td>
+                <td>15</td>
+                <td>7</td>
+                <td>7</td>
+                <td>50</td>
+                <td>39</td>
+                <td>11</td>
+                <td>
+                    <span id="vitoria"> V </span> |
+                    <span id="derrota"> D </span> |
+                    <span id="derrota"> D </span>|
+                    <span id="empate"> Z </span> |
+                    <span id="vitoria"> V </span>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Palmeiras</td>
+                <td>51</td>
+                <td>29</td>
+                <td>14</td>
+                <td>9</td>
+                <td>6</td>
+                <td>43</td>
+                <td>26</td>
+                <td>17</td>
+                <td>
+                    <span id="vitoria"> V </span>|
+                    <span id="empate"> Z </span> |
+                    <span id="vitoria"> V </span>|
+                    <span id="vitoria"> V </span>|
+                    <span id="derrota"> D </span>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Palmeiras</td>
+                <td>51</td>
+                <td>29</td>
+                <td>14</td>
+                <td>9</td>
+                <td>6</td>
+                <td>43</td>
+                <td>26</td>
+                <td>17</td>
+                <td>
+                    <span id="vitoria"> V </span>|
+                    <span id="empate"> Z </span> |
+                    <span id="vitoria"> V </span>|
+                    <span id="vitoria"> V </span>|
+                    <span id="derrota"> D </span>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Grêmio</td>
+                <td>51</td>
+                <td>30</td>
+                <td>12</td>
+                <td>15</td>
+                <td>3</td>
+                <td>39</td>
+                <td>25</td>
+                <td>14</td>
+                <td>
+                    <span id="empate"> Z </span> |
+                    <span id="empate"> Z </span> |
+                    <span id="empate"> Z </span> |
+                    <span id="vitoria"> V </span>|
+                    <span id="vitoria"> V </span>
+
+
+                </td>
+            </tr>
+
+
+        </table>
+        <hr />
+    </div>
+    <footer>
+        Teste 2021@ - Leandro de Lima Ramos
+    </footer>
+</body>
+
+</html>

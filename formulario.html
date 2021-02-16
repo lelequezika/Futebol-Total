@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM CONSTRUÇÃO - FUTEBOL TOTAL</title>
+
+    <style>
+        body {
+
+            background-color: greenyellow
+        }
+
+        #menu {
+            border: 2px none black;
+            margin: 0px 0px;
+            padding: 5px;
+            background-color: yellow;
+            color: black;
+            font-family: fantasy;
+            font-size: 15pt;
+            text-align: center;
+            border-radius: 5px;
+
+        }
+
+        #container {
+            border: 2px none black;
+            margin: 2px 0px;
+            background-color: greenyellow;
+            color: black;
+            font-size: 20pt;
+            border-radius: 5px;
+        }
+
+        #titulo {
+            text-align: center;
+            padding: 2px;
+            color: blue;
+            font-family: fantasy;
+        }
+
+
+        footer {
+            border: 2px none black;
+            margin: 0px 0px;
+            background-color: blue;
+            color: white;
+            font-family: fantasy;
+            font-size: 15pt;
+            border-radius: 5px;
+
+        }
+    </style>
+
+
+    <script>
+        let teste = "58.88";
+        let teste2 = "58";
+        parseFloat(teste);
+
+       const botao = function(){
+                alert("Reload")
+
+            }
+
+
+    </script>
+
+</head>
+
+<body>
+    <header id="menu">
+        <a href="./index.html">Ínicio </a>
+        <a href="./tabela.html">| Tabela </a>
+        | Próximos Jogos | Estatísticas | <a href="./formulario.html">Formulário</a> | -------- | -------- | -------- |
+        --------
+    </header>
+
+
+    <div id="container">
+
+        <div id="titulo">Formulário</div>
+
+        <form>
+            <fieldset>
+                <legend>Dados de Login</legend>
+
+                <label for="campoNome">Nome:</label>
+                <input type="text" name="campoNome" autofocus="1" id="campoNome"> <br />
+
+                <label for="campoSenha">Senha:</label>
+                <input type="password" name="campoSenha" id="campoSenha">
+
+            </fieldset>
+
+            <br />
+
+            <fieldset>
+                <legend>Telefones para contato</legend>
+
+                <label for="campoTel1">Residencial:</label>
+                <input type="tel" name="campoTel1" id="campoTel1"> <br />
+                <label for="campoTel2">Celular:</label>
+                <input type="tel" name="campoTel2" id="campoTel2">
+
+            </fieldset>
+
+            <br />
+
+            <fieldset>
+                <legend>Qual time você torce?</legend>
+
+                <input list="listTimes" name="listTimesEnvio" />
+                <datalist id="listTimes">
+                    <option value="Athletico PR" />
+                    <option value="Atlético MG" />
+                    <option value="Atlético GO" />
+                    <option value="Bahia" />
+                    <option value="Botafogo" />
+                    <option value="Bragantino" />
+                    <option value="Ceará" />
+                    <option value="Corinthians" />
+                    <option value="Coritiba" />
+                    <option value="Flamengo" />
+                    <option value="Fluminense" />
+                    <option value="Fortaleza" />
+                    <option value="Goiás" />
+                    <option value="Grêmio" />
+                    <option value="Internacional" />
+                    <option value="Palmeiras" />
+                    <option value="Santos" />
+                    <option value="São Paulo" />
+                    <option value="Sport" />
+                    <option value="Vasco" />
+                    <option value="Outro" />
+                </datalist>
+
+
+
+            </fieldset>
+
+            <input type="button" value="Verificar">
+
+            <br />
+
+        
+            <button>Botão vazio, ou outro é pra formulário</button>
+       
+        </form>
+
+        <script>
+
+            let manipulacao;
+            manipulacao = document.getElementById("titulo");
+            manipulacao.innerHTML = "<strong>Ldddddd</strong>";
+
+            const botoes = document.getElementsByTagName("button")
+            botoes[0].addEventListener("click", botao)
+
+
+        </script>
+
+
+    </div>
+    <footer>
+        Teste 2021@ - Leandro de Lima Ramos
+    </footer>
+</body>
+
+</html>
